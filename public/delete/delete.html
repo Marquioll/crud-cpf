@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exclusão - DELETE</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <h1>CRUD - Cadastro de Pessoas</h1>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="../post/post.html">Cadastrar</a>
+        <a href="../get/get.html">Listar</a>
+        <a href="../put/put.html">Atualizar</a>
+        <a href="../delete/delete.html">Excluir</a>
+    </nav>
+
+    <hr>
+
+    <h2>DELETE - Excluir Pessoa</h2>
+
+    <h3>Buscar por CPF</h3>
+
+    <label for="cpfBusca">CPF:</label>
+    <input type="text" id="cpfBusca">
+
+    <button type="button" id="btnBuscar">Buscar</button>
+
+    <p id="mensagemBusca"></p>
+
+    <div id="dadosPessoa" style="display: none;">
+
+        <hr>
+
+        <h3>Pessoa encontrada</h3>
+
+        <p><strong>ID:</strong> <span id="idPessoa"></span></p>
+
+        <p>
+            <strong>CPF:</strong>
+            <span id="cpfPessoa"></span>
+        </p>
+
+        <p>
+            <strong>Nome:</strong>
+            <span id="nomePessoa"></span>
+        </p>
+
+        <p>
+            <strong>Sobrenome:</strong>
+            <span id="sobrenomePessoa"></span>
+        </p>
+
+        <p>
+            <strong>E-mail:</strong>
+            <span id="emailPessoa"></span>
+        </p>
+
+        <button type="button" id="btnExcluir">
+            Excluir Pessoa
+        </button>
+
+    </div>
+
+    <p id="mensagemExclusao"></p>
+
+    <script src="delete.js"></script>
+
+</body>
+
+</html>
